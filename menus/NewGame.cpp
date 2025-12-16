@@ -76,6 +76,7 @@ void CMenuNewGame::StartGame( uintptr_t skill )
 	EngFuncs::CvarSetValue( "pausable", 1.0f ); // singleplayer is always allowing pause
 	EngFuncs::CvarSetValue( "maxplayers", 1.0f );
 	EngFuncs::CvarSetValue( "coop", 0.0f );
+	EngFuncs::CvarSetValue( "sv_lan", 1.0f ); // Enable LAN broadcasting for singleplayer
 
 	EngFuncs::PlayBackgroundTrack( NULL, NULL );
 
